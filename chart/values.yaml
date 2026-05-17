@@ -1,4 +1,4 @@
-replicaCount: 2
+replicaCount: 5
 
 serviceAccount:
   create: false
@@ -66,6 +66,6 @@ readinessProbe:
   periodSeconds: 5
 
 serviceMonitor:
-  enabled: false  # We'll enable when we install Prometheus Operator later
+  enabled: false # We'll enable when we install Prometheus Operator later
   interval: 15s
   path: /metrics
